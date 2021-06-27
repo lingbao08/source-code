@@ -18,6 +18,6 @@
 ###TODO LIST
 暂定线路：
 1. disruptor，目前已经分析了单生产的线路。(多生产看情况后面再分析吧)
-2. netty，先分析bytebuf等几个重要的模块。（正在进行中。。。）
+2. netty，bytebuf分析完毕，codec loading。。。
 3. es.（。。。）
 
