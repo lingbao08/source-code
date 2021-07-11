@@ -4,7 +4,7 @@
 
 但是和多生产模式有很多是相似的。
 
-配合笔记：https://422674ca.wiz06.com/wapp/pages/view/share/s/129Dja3XgQYU25juEg0Tch3V19PpDx3PeAzF2Ve8ee2Dsdrd。
+可以配合文章使用：TODO文章地址。
 
 多生产模式后期补充。
 
