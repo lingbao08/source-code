@@ -49,6 +49,8 @@ public interface WaitStrategy
 
     /**
      * Implementations should signal the waiting {@link EventProcessor}s that the cursor has advanced.
+     *
+     * 这个方法的实现意味着通知等待中的{@link EventProcessor}，（当前消费的）光标已经前进，现在可以写了。
      */
     void signalAllWhenBlocking();
 }

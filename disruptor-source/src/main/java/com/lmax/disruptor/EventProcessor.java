@@ -22,6 +22,12 @@ package com.lmax.disruptor;
  * instance.
  * <p>
  * An EventProcessor will generally be associated with a Thread for execution.
+ *
+ *
+ * 一个 EventProcessor 需要实现runnable，然后轮训{@link RingBuffer}中的事件来使用合适的等待策略。
+ * 你不太可能需要自己去实现的这个接口。看看在第一个实例中单独使用{@link EventHandler}接口和预支持的BatchEventProcessor。
+ *
+ * 一个 EventProcessor 一般将会关联一个线程去执行。
  */
 public interface EventProcessor extends Runnable
 {
@@ -35,6 +41,10 @@ public interface EventProcessor extends Runnable
     /**
      * Signal that this EventProcessor should stop when it has finished consuming at the next clean break.
      * It will call {@link SequenceBarrier#alert()} to notify the thread to check status.
+     *
+     * 当在下一个断点消费完成时，通知EventProcessor应该停止了。
+     * 将调用{@link SequenceBarrier#alert()}去唤醒线程去清除状态。
+     *
      */
     void halt();
 
